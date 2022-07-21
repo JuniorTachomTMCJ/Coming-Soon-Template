@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon Template</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Raleway', sans-serif;
+            font-weight: normal;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .container {
+            animation-duration: 0.8s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            animation-name: opac;
+        }
+
+        .main {
+            height: 100vh;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+
+            background-image: url('./forestbridge.jpg');
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .main h1 {
+            font-size: 6.4rem;
+            line-height: 9.6rem;
+            margin: 1rem auto;
+            text-transform: uppercase;
+
+            animation-duration: 0.4s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            animation-name: animatetop;
+        }
+
+        .main p {
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            margin: 1rem auto;
+        }
+
+        .main hr {
+            width: 19rem;
+        }
+
+        .header {
+            position: fixed;
+            color: #fff;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .header .logo {
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+            padding: 2.5rem;
+        }
+
+        .footer {
+            position: fixed;
+            color: #fff;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .footer p {
+            font-size: 1.5rem;
+            line-height: 2.3rem;
+            padding: 2rem;
+        }
+
+        @keyframes animatetop {
+
+            from {
+                transform: translateY(-300px);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes opac {
+
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media screen and (max-width:920px) {
+            html {
+                font-size: 55%;
+            }
+
+            .main h1 {
+                font-size: 5rem;
+                line-height: 6rem;
+            }
+
+            .main p {
+                font-size: 1.4rem;
+            }
+
+            .main hr {
+                width: 7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <p>Logo</p>
+            </div>
+        </header>
+        <main class="main">
+            <h1>Coming soon</h1>
+            <hr>
+            <p>35 day left</p>
+        </main>
+        <footer class="footer">
+            <p>Powered by <span>Junior TACHOM</span></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
